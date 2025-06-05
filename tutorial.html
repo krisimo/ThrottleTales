@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    
+    
+    <title>Throttle Tales – Explore & Connect</title>
+  
+    <meta name="author" content="Kristoffer Simonsen Haugland">
+    <meta name="description" content="An awesome platform where users can connect, share blogs, pictures, and more.">
+    <meta name="keywords" content="blog, community, pictures, sharing, explore, connect">
+    <meta name="theme-color" content="#40474f">
+  
+  <link rel="icon" href="../assets/favicon.ico" type="helmet">
+  
+    <link rel="stylesheet" href="../CSS/variables.css">
+    <link rel="stylesheet" href="../CSS/base.css"> 
+    <link rel="stylesheet" href="../CSS/button.css">
+    <link rel="stylesheet" href="../CSS/layout-nav.css">
+    <link rel="stylesheet" href="../CSS/tutorial.css">
+    <link rel="stylesheet" href="../CSS/mobile.css">
+
+    
+  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+    <script src="../JS/auth.js" defer></script>
+    <script src="../JS/login.js" defer></script>
+    <script src="../JS/darcmode.js" defer></script>
+    <script src="../JS/navbar.js" defer></script>
+    <script src="../JS/profile.js" defer></script>
+          
+    
+
+  
+  </head>
+
+  <body>
+    <header>
+        <nav class="navbar">
+          <div class="nav-left">
+            <a href="../index.html" class="site-name">ThrottleTales</a>
+          </div>
+    
+          <!-- CENTER LINKS -->
+          <ul class="nav-center desktop-only">
+            <li><a href="../tips&tricks.html">Tips & Tricks</a></li>
+            <li><a href="../tutorial.html">Tutorial</a></li>
+            <li><a href="../index.html">Blog</a></li>
+          </ul>
+      
+          <!-- DESKTOP BUTTONS -->
+          <div class="nav-right desktop-only">
+            <div id="userWelcome" class="hidden"></div>
+            <button id="logoutBtn" class="open-btn hidden">Logout</button>
+            <button id="darkModeToggle" class="open-btn">🌙</button>
+          </div>
+      
+          <!-- BURGER -->
+          <button class="burger" id="burgerBtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+      
+          <!-- MOBILE MENU -->
+          <div class="mobile-menu hidden" id="mobileMenu">
+            <ul class="nav-mobile">          
+              <li><a href="../tips&tricks.html">Tips & Tricks</a></li>
+              <li><a href="../tutorial.html">Tutorial</a></li>
+              <li><a href="#blogFeed">Blog</a></li>
+              <li><button id="mobileAuth" class="open-btn">Login / Register</button></li>
+              <li><div id="userWelcomeMobile" class="hidden"></div></li>
+              <li><button id="logoutBtnMobile" class="open-btn hidden">Logout</button></li>
+              <li><button id="mobileDarkModeToggle" class="open-btn">🌙</button></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <main class="tutorials">
+        <h1>ThrottleTales Video Tutorials</h1>
+    
+        <section class="video-section">
+          <h2>Turning Your Motorcycle 180° on the Kickstand</h2>
+          <iframe src="https://www.youtube.com/embed/2nNWc65iHac?si=DrCAUfws0t7cQrp-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+        <section class="video-section">
+          <h2>How to Pack Efficiently for Long Motorcycle Trips</h2>
+          <iframe src="https://www.youtube.com/embed/-r95hX_WWv4?si=a9pK2SwfzzlOzQq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+        <section class="video-section">
+          <h2>Handling Curves and Mountain Roads</h2>
+          <iframe src="https://www.youtube.com/embed/doVLIwQbnWs?si=MHFncZopXBU-Q-TT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </main>
+
+
+    <script type="module">
+  import { enableDarkModeToggle } from "../JS/darcmode.js";
+  import { setupNavbar } from "../JS/navbar.js";
+  import { setupAuthModal } from "../JS/auth.js";
+  import { setupLogin } from "../JS/login.js";
+
+  enableDarkModeToggle();
+  setupNavbar();
+  setupAuthModal();
+  setupLogin();
+</script>
+
+
+    </body>
+    </html>
+    

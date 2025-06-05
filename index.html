@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  
+  <title>Throttle Tales – Explore & Connect</title>
+
+  <meta name="author" content="Kristoffer Simonsen Haugland">
+  <meta name="description" content="An awesome platform where users can connect, share blogs, pictures, and more.">
+  <meta name="keywords" content="blog, community, pictures, sharing, explore, connect">
+  <meta name="theme-color" content="#40474f">
+
+  <link rel="icon" href="./assets/favicon.ico" type="helmet">
+
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../CSS/blog.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="../index.html" class="site-name">ThrottleTales</a>
+      </div>
+
+      <!-- CENTER LINKS -->
+      <ul class="nav-center desktop-only">
+        <li><a href="../tips&tricks.html">Tips & Tricks</a></li>
+        <li><a href="../tutorial.html">Tutorial</a></li>
+        <li><a href="#blogFeed">Blog</a></li>
+      </ul>
+  
+      <!-- DESKTOP BUTTONS -->
+      <div class="nav-right desktop-only">
+        <button id="openAuth" class="open-btn">Login / Register</button>
+        <div id="userWelcome" class="hidden"></div>
+        <button id="logoutBtn" class="open-btn hidden">Logout</button>
+        <button id="darkModeToggle" class="open-btn">🌙</button>
+      </div>
+  
+      <!-- BURGER -->
+      <button class="burger" id="burgerBtn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+  
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu hidden" id="mobileMenu">
+        <ul class="nav-mobile">          
+          <li><a href="../tips&tricks.html">Tips & Tricks</a></li>
+          <li><a href="../tutorial.html">Tutorial</a></li>
+          <li><a href="#blogFeed">Blog</a></li>
+          <li><button id="mobileAuth" class="open-btn">Login / Register</button></li>
+          <li><div id="userWelcomeMobile" class="hidden"></div></li>
+          <li><button id="logoutBtnMobile" class="open-btn hidden">Logout</button></li>
+          <li><button id="mobileDarkModeToggle" class="open-btn">🌙</button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  
+
+  
+  
+  <main>
+      <section class="hero fade-out">
+        <div class="hero-overlay">
+          <h1>Find Your Road</h1>
+          <p>Adventure starts where the pavement ends.</p>
+        </div>
+      </section>
+      
+      
+      <section id="blogFeed" class="blog-feed container">
+        <h2>Latest Blog Posts</h2>
+        <div id="blogGrid" class="blog-grid"></div>
+        <div id="pagination" class="pagination-container"></div>
+      </section>
+
+
+
+
+      
+  </main>
+  
+  <!-- Modal Overlay -->
+  <div id="authOverlay" class="hidden"></div>
+
+ <!-- Modal -->
+<div id="authModal" class="modal hidden">
+  <div class="modal-inner">
+    <button class="funk-btn" id="closeModal" aria-label="Close modal">❌</button>
+
+    <div class="container">
+      <div class="switcher">
+        <button id="showLogin" class="opt-btn tab-toggle">Login</button>
+        <button id="showRegister" class="opt-btn tab-toggle">Register</button>
+      </div>
+
+        <div class="form-wrapper">
+          <form id="loginForm" class="form active">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Email" required />
+            <input type="password" id="loginPassword" placeholder="Password" required />
+            <button type="submit" class="login-btn">Login</button>
+          </form>
+
+          <form id="registerForm" class="form">
+            <h2>Register</h2>
+            <input type="text" id="regUsername" placeholder="Username" required />
+            <input type="email" id="regEmail" placeholder="Email" required />
+            <input type="password" id="regPassword" placeholder="Password" required />
+            <button type="submit" class="login-btn">Sign Up</button>
+          </form>
+        </div>
+
+        <div id="message"></div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="module" src="./JS/index.js"></script>
+
+
+</body>
+
+</html>

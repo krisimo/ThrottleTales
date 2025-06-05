@@ -1,0 +1,44 @@
+:root {
+  /* Light mode (default) */
+  --color-primary: #ffc107;
+  --color-primary-dark: #e0a800;
+  --color-primary-hover: #ffdb4d;
+  --color-primary-dark-hover: #d48f00;
+
+  --color-accent: #2b88ff;
+  --color-background: #f9f9f9;
+  --color-surface: #ffffff;
+  --color-text: #1e1e1e;
+  --color-light-gray: #cfcece;
+  --color-dark-gray: #555;
+  --color-error: #d32f2f;
+
+  
+
+  --font-main: 'Inter', sans-serif;
+  --font-size-base: 1rem;
+  --font-size-heading: 1.25rem;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+
+  --border-radius: 8px;
+  --input-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* 🌙 Dark Mode Overrides */
+[data-theme="dark"] {
+  --color-background: #121212;
+  --color-surface: #1f1f1f;
+  --color-text: #f0f0f0;
+  --color-light-gray: #2e2e2e;
+  --color-dark-gray: #999;
+  --color-input: #2c2c2c;
+  --color-light: #ffffff;
+
+
+  --card-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  
+  <title>Throttle Tales – Explore & Connect</title>
+
+  <meta name="author" content="Kristoffer Simonsen Haugland">
+  <meta name="description" content="An awesome platform where users can connect, share blogs, pictures, and more.">
+  <meta name="keywords" content="blog, community, pictures, sharing, explore, connect">
+  <meta name="theme-color" content="#40474f">
+
+  <link rel="icon" href="./assets/favicon.ico" type="helmet">
+
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../CSS/blog.css">
+  <link rel="stylesheet" href="../CSS/blog-detail.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+  
+
+
+</head>
+
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="../index.html" class="site-name">ThrottleTales</a>
+      </div>
+
+      <!-- CENTER LINKS -->
+      <ul class="nav-center desktop-only">
+        <li><a href="../tips&tricks.html">Tips & Tricks</a></li>
+        <li><a href="../tutorial.html">Tutorial</a></li>
+            <li><a href="/index.html#blogFeed">Blog</a></li>
+      </ul>
+  
+      <!-- DESKTOP BUTTONS -->
+      <div class="nav-right desktop-only">
+        <div id="userWelcome" class="hidden"></div>
+        <button id="logoutBtn" class="open-btn hidden">Logout</button>
+        <button id="darkModeToggle" class="open-btn">🌙</button>
+      </div>
+  
+      <!-- BURGER -->
+      <button class="burger" id="burgerBtn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+  
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu hidden" id="mobileMenu">
+        <ul class="nav-mobile">          
+          <li><a href="../tips&tricks.html">Tips & Tricks</a></li>
+          <li><a href="../tutorial.html">Tutorial</a></li>
+          <li><a href="#blogFeed">Blog</a></li>
+          <li><button id="mobileAuth" class="open-btn">Login / Register</button></li>
+          <li><div id="userWelcomeMobile" class="hidden"></div></li>
+          <li><button id="logoutBtnMobile" class="open-btn hidden">Logout</button></li>
+          <li><button id="mobileDarkModeToggle" class="open-btn">🌙</button></li>
+        </ul> 
+      </div>
+    </nav>
+  </header>
+
+
+
+
+   <main>
+    <article id="blogDetail" class="blog-detail-container">
+      <!-- Blog content will be injected here -->
+    </article>
+
+    <section class="comments-section">
+      <h2>Comments</h2>
+      <div class="comment">
+        <div class="comment"><p><strong>User123</strong>: Love this post!</p></div>
+      </div>
+      <form id="commentForm">
+        <textarea id="commentInput" placeholder="Leave a comment..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="../JS/blog-detail.js"></script>
+
+</body>
+</html>

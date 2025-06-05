@@ -1,0 +1,90 @@
+.tips-section {
+  max-width: 900px;
+  margin: 6rem auto;
+  padding: 2rem 2.5rem;
+  background: var(--color-surface);
+  border-radius: var(--border-radius);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  scroll-margin-top: 80px;
+  position: relative;
+  border: 1px solid var(--color-border-light);
+}
+
+.tips-section h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: orange; /* 🔥 changed back to orange */
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.tips-section article {
+  background: var(--color-light-gray);
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+  padding: 1.8rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-left: 4px solid var(--color-accent);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tips-section article:hover {
+  background: var(--color-surface);
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  border-left-color: var(--color-primary);
+}
+
+.tips-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-heading);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tips-section h2::before {
+  content: "🛠️";
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.tips-section p {
+  line-height: 1.7;
+  color: var(--color-text);
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+}
+
+/* Optional: faded top gradient */
+.tips-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 6px;
+  background: linear-gradient(to right, var(--color-accent), transparent);
+  border-radius: 3px;
+  opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .tips-section {
+    padding: 1rem;
+  }
+
+  .tips-section h1 {
+    font-size: 1.9rem;
+  }
+
+  .tips-section h2 {
+    font-size: 1.2rem;
+  }
+}

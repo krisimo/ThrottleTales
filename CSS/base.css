@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('variables.css');
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-main);
+  background: var(--color-surface);
+  display: block;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: var(--color-surface);
+  padding: var(--space-lg);
+  border-radius: calc(var(--border-radius) * 2);
+  box-shadow: var(--card-shadow);
+  width: 100%;
+  max-width: 360px;
+  box-sizing: border-box;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.hidden {
+  display: none !important;
+}
+
+.form {
+  display: none;
+  flex-direction: column;
+  gap: var(--space-md);
+}

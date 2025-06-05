@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    
+    
+    <title>Throttle Tales – Explore & Connect</title>
+  
+    <meta name="author" content="Kristoffer Simonsen Haugland">
+    <meta name="description" content="An awesome platform where users can connect, share blogs, pictures, and more.">
+    <meta name="keywords" content="blog, community, pictures, sharing, explore, connect">
+    <meta name="theme-color" content="#40474f">
+  
+    <link rel="icon" href="./assets/favicon.ico" type="helmet">
+  
+    <link rel="stylesheet" href="../CSS/variables.css">
+    <link rel="stylesheet" href="../CSS/base.css"> <!-- Or shared.css -->
+    <link rel="stylesheet" href="../CSS/button.css">
+    <link rel="stylesheet" href="../CSS/layout-nav.css">
+    <link rel="stylesheet" href="../CSS/tips.css">
+    <link rel="stylesheet" href="../CSS/mobile.css">
+
+    
+  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+
+    
+  
+  
+  </head>
+
+  <body>
+    <header>
+        <nav class="navbar">
+          <div class="nav-left">
+            <a href="../index.html" class="site-name">ThrottleTales</a>
+          </div>
+    
+          <!-- CENTER LINKS -->
+          <ul class="nav-center desktop-only">
+            <li><a href="../tips&tricks.html">Tips & Tricks</a></li>
+            <li><a href="../tutorial.html">Tutorial</a></li>
+            <li><a href="/index.html#blogFeed">Blog</a></li>
+          </ul>
+      
+          <!-- DESKTOP BUTTONS -->
+          <div class="nav-right desktop-only">
+            <div id="userWelcome" class="hidden"></div>
+            <button id="logoutBtn" class="open-btn hidden">Logout</button>
+            <button id="darkModeToggle" class="open-btn">🌙</button>
+          </div>
+      
+          <!-- BURGER -->
+          <button class="burger" id="burgerBtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+      
+          <!-- MOBILE MENU -->
+          <div class="mobile-menu hidden" id="mobileMenu">
+            <ul class="nav-mobile">          
+              <li><a href="../tips&tricks.html">Tips & Tricks</a></li>
+              <li><a href="../tutorial.html">Tutorial</a></li>
+              <li><a href="#blogFeed">Blog</a></li>
+              <li><button id="mobileAuth" class="open-btn">Login / Register</button></li>
+              <li><div id="userWelcomeMobile" class="hidden"></div></li>
+              <li><button id="logoutBtnMobile" class="open-btn hidden">Logout</button></li>
+              <li><button id="mobileDarkModeToggle" class="open-btn">🌙</button></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+
+<main>
+    <section class="tips-section">
+        <h1>Tips & Tricks for the Ultimate Motorcycle Trip</h1>
+      
+        <article>
+          <h2>1. What to Pack for a Long Motorcycle Trip</h2>
+          <p>
+            When you're on two wheels for days or weeks, every item needs to earn its space. Prioritize weather-appropriate clothing, base layers, a waterproof jacket, and a spare pair of gloves. Pack light but smart — use compression bags to save space, and don’t forget essentials like a phone mount, earplugs, microfiber towel, and toiletries in travel size. A compact power bank and USB charging cable are must-haves.
+          </p>
+        </article>
+      
+        <article>
+          <h2>2. Tools and Repair Items You’ll Want</h2>
+          <p>
+            Breakdown in the middle of nowhere? Be ready. Bring a basic tool kit that includes Allen keys, screwdrivers, wrenches, and a compact tire pressure gauge. Add a puncture repair kit, duct tape, zip ties, a spare bulb or fuse, and chain lube. A small multitool and a headlamp can save you in unexpected situations. If your bike needs special tools — bring them.
+          </p>
+        </article>
+      
+        <article>
+          <h2>3. Food to Bring on the Road</h2>
+          <p>
+            Fuel for your body is just as important as fuel for your bike. Go for high-energy, compact foods like protein bars, trail mix, jerky, and instant coffee or tea sachets. Bring a reusable water bottle or hydration pack — dehydration sneaks up fast on the road. For longer breaks, small camping stoves let you prep hot meals using dehydrated or canned food.
+          </p>
+        </article>
+      
+        <article>
+          <h2>4. Scenic and Safe Roads to Take</h2>
+          <p>
+            Some roads are made for riding. In Norway, the Atlantic Ocean Road, Trollstigen, and Lysebotn are breathtaking — twisting paths through mountains, fjords, and coastlines. If you're heading abroad, look into Germany's B500, Italy’s Stelvio Pass, or the Transfagarasan Highway in Romania. Always check for weather and road conditions before riding, and try to avoid major highways for a more relaxed, scenic experience.
+          </p>
+        </article>
+      </section>
+      
+</main>
+
+
+
+<script type="module" src="./JS/tips&tricks.js"></script>
+
+
+
+
+  </body>

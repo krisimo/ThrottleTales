@@ -1,0 +1,154 @@
+@import url(button.css);
+
+
+
+.form.active {
+  display: flex;
+}
+
+ h2 {
+  margin-bottom: 1rem;
+  color: var(--color-dark-gray);
+  font-weight: 600;
+  text-align: center;
+}
+
+input {
+  padding: var(--space-md);
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  box-shadow: var(--input-shadow);
+  font-size: var(--font-size-base);
+  background: var(--color-light-gray);
+}
+
+input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.2);
+  background: var(--color-white);
+}
+
+
+.switcher {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+
+#authOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 998;
+}
+
+
+
+
+#message {
+  font-size: 0.9rem;
+  color: var(--color-error);
+  margin-top: 1rem;
+  text-align: center;
+} 
+
+#authModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-surface);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  z-index: 999;
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.3s ease;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.modal-inner {
+  position: relative;
+}
+
+.funk-btn {
+  all: unset;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-light-gray);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  z-index: 1000;
+}
+
+.funk-btn:hover {
+  background: #ddd;
+}
+
+.funk-btn svg {
+  stroke: var(--color-dark-gray);
+  width: 18px;
+  height: 18px;
+}
+
+.funk-btn:hover svg {
+  stroke: #000;
+}
+
+#closeModal {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+ /* Dark mode override */ 
+[data-theme="dark"] #closeModal {
+  color: var(--color-light); /* Assuming --color-light is white or similar */
+}
+.tab-toggle {
+  color: var(--color-text); /* Light or dark depending on theme */
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* Optional hover or active effect */
+.tab-toggle:hover,
+.tab-toggle.active {
+  color: var(--color-primary);
+}
+
+/* Dark mode override if needed */
+[data-theme="dark"] .tab-toggle {
+  color: var(--color-light); /* override if var(--color-text) doesn't update */
+}

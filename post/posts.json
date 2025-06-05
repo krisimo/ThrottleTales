@@ -1,0 +1,83 @@
+[
+  {
+    "id": "post1",
+    "title": "Riding the Atlantic Road",
+    "body": "Discover the breathtaking curves of Norway's most scenic motorcycle route: the Atlantic Ocean Road.",
+    "media": {
+      "url": "https://thehiddennorth.com/wp-content/uploads/2021/03/Atlantic-Road-Featured-Image.jpg",
+      "alt": "Riding the Atlantic Road"
+    }
+  },
+  {
+    "id": "post2",
+    "title": "Winter Prep for Your Bike",
+    "body": "Tips and tricks for storing and maintaining your motorcycle through Norway’s icy winter months.",
+    "media": {
+      "url": "https://www.adventurebikerider.com/wp-content/uploads/2017/11/motorcycle-in-snow-768x576.jpg",
+      "alt": "Winter motorcycle prep"
+    }
+  },
+  {
+    "id": "post3",
+    "title": "ThrottleTales Turns One",
+    "body": "We’re celebrating our first year of moto blogging and community building. Here's what we've learned.",
+    "media": {
+      "url": "https://img.freepik.com/premium-vector/10th-anniversary-badge-logo-vector-illustration_680692-392.jpg",
+      "alt": "ThrottleTales anniversary"
+    }
+  },
+  {
+    "id": "post4",
+    "title": "The Best Moto Gear for 2025",
+    "body": "Our top picks for jackets, boots, gloves, and gadgets every serious rider should have this season.",
+    "media": {
+      "url": "https://cdn-fastly.motorcycle.com/media/2023/03/28/11320786/mo-tested-rev-it-westport-overshirt-review.jpg?size=720x845&nocrop=1",
+      "alt": "2025 motorcycle gear"
+    }
+  },
+  {
+    "id": "post5",
+    "title": "Midnight Sun Ride",
+    "body": "Chasing daylight on two wheels through Norway’s arctic circle. A surreal, unforgettable journey.",
+    "media": {
+      "url": "https://www.ayresadventures.com/wp-content/uploads/2024/10/2024-Norway-Slider-06.jpg",
+      "alt": "Midnight sun motorcycle trip"
+    }
+  },
+  {
+    "id": "post6",
+    "title": "How to Pack for Long Rides",
+    "body": "Light, tight, and ready to ride — here’s how we pack our saddlebags for weeks on the road.",
+    "media": {
+      "url": "https://motoress.com/wp-content/uploads/2014/12/preparelongorshort-june-artbnr.jpg",
+      "alt": "Packing for long motorcycle trip"
+    }
+  },
+  {
+    "id": "post7",
+    "title": "Our Favorite Moto Cafés",
+    "body": "A list of cozy, rider-friendly stops with good coffee, warm food, and great conversation.",
+    "media": {
+      "url": "https://bikeshedmoto.com/cdn/shop/files/MenuLondonSquare2_9e2a3427-4353-4976-92e1-863560126d4f_800x.jpg?v=1626956972",
+      "alt": "Motorcycle café culture"
+    }
+  },
+  {
+    "id": "post8",
+    "title": "The Art of Cornering",
+    "body": "Learn the body positioning and braking techniques that make tight curves feel effortless.",
+    "media": {
+      "url": "https://i.ytimg.com/vi/dbCdcoBNZ4Y/maxresdefault.jpg",
+      "alt": "Motorcycle cornering technique"
+    }
+  },
+  {
+    "id": "post9",
+    "title": "Why We Ride",
+    "body": "A personal story on freedom, healing, and the wild peace only found on a motorbike.",
+    "media": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5ea1a61d27597f352a7667df/1640489956551-EJS0EHWY32IOEIFAHT96/Why+We+Ride+Landing+Page+Image.jpg?format=2500w",
+      "alt": "Why we ride motorcycles"
+    }
+  }
+]
