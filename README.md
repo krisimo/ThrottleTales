@@ -1,6 +1,6 @@
 # ThrottleTales – Exam Project 1
 
-## 🏍️ Project Overview
+## Project Overview
 
 ThrottleTales is a fictional motorcycle travel blog built as part of the Noroff Front-End Development 1 Exam Project. It allows users to explore and share motorcycle journeys, read travel blogs, and connect through tips and tutorials for fellow riding enthusiasts.
 
